@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    radial-gradient(circle at top right, rgba(0,255,150,0.15), transparent 20%),
+    radial-gradient(circle at bottom left, rgba(0,100,255,0.2), transparent 30%),
+    linear-gradient(135deg,#020817,#04142d,#071d45);
+
+    color:white;
+    overflow-x:hidden;
+    padding:20px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    padding:25px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.03);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+}
+
+.logo{
+    font-size:48px;
+    font-weight:800;
+    color:#8BFF3D;
+
+    text-shadow:0 0 15px rgba(139,255,61,0.5);
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+
+    width:0%;
+    height:2px;
+
+    background:#8BFF3D;
+
+    transition:0.4s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* HERO */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-top:60px;
+}
+
+/* LEFT */
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:55px;
+    line-height:65px;
+    font-weight:800;
+}
+
+.hero-left span{
+    color:#8BFF3D;
+}
+
+.hero-left p{
+    margin-top:30px;
+    font-size:22px;
+    line-height:38px;
+    color:#cfcfcf;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    gap:25px;
+    margin-top:45px;
+}
+
+.scan-btn,
+.history-btn{
+    padding:22px 35px;
+    border:none;
+    border-radius:20px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+.scan-btn{
+    background:#8BFF3D;
+    color:black;
+
+    box-shadow:0 0 25px rgba(139,255,61,0.4);
+}
+
+.scan-btn:hover{
+    transform:translateY(-5px);
+}
+
+.history-btn{
+    background:transparent;
+
+    border:2px solid #8BFF3D;
+
+    color:white;
+}
+
+.history-btn:hover{
+    background:#8BFF3D;
+    color:black;
+}
+
+/* FEATURES */
+
+.features{
+    margin-top:50px;
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+a.historique-btn{
+    color:white;
+    text-decoration:none;
+}
+
+a.historique-btn:hover{
+    color:#e0e0e0;
+    text-decoration:none;
+}
