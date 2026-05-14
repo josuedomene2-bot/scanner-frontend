@@ -172,3 +172,53 @@ a.historique-btn:hover{
     color:#e0e0e0;
     text-decoration:none;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+  }
+
+  .navbar .logo {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    padding: 16px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .scan-btn,
+  .history-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
